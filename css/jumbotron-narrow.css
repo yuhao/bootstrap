@@ -3,15 +3,27 @@
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #007cf1
 }
 body {
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  color: #FFFFFF;
+}
+
+.row {
+  margin: 0px;
+}
+
+.row > h2 {
+  color: #1CA8DD;
+}
+
+.row > p {
+  color: #CFD2DA;
 }
 
 .brand {
-  color: #BF5700;
+  margin: 8px 0px;
+  color: #1CA8DD;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -22,6 +34,33 @@ body {
   padding-left: 15px;
 }
 
+.nav > li {
+  display: inline-block;
+  padding: 8px 16px;
+}
+.nav > li + li {
+  margin-left: 12px;
+}
+.nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 15px;
+  color: #CFD2DA;
+  border-bottom: 2px solid transparent;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.nav > .active > a,
+.nav > .active > a:hover,
+.nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+  /* font-weight: bold; */
+}
 /* Custom page header */
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -32,9 +71,9 @@ body {
 
 /* Custom page footer */
 .footer {
+  margin-top: 32px;
   text-align: center;
-  padding-top: 19px;
-  color: #D6D2C4;
+  padding: 32px 0px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -60,20 +99,6 @@ body {
 }
 .marketing p + h4 {
   margin-top: 28px;
-}
-
-.nav-pills > li > a {
-  font-size: 15px;
-  color: #D6D2C4;
-  border-bottom: 2px solid transparent;
-}
-
-.organizers > h2 {
-  color: #D6D2C4;
-}
-
-.organizers > p {
-  color: #D6D2C4;
 }
 
 /* Responsive: Portrait tablets and up */
