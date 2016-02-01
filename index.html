@@ -29,6 +29,31 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!--
+    Google Maps for the specified location.
+    <script>
+      function initialize()
+      {
+        var mapProp = {
+          center: new google.maps.LatLng(37.5650172,126.8494674),
+          zoom:11,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"),mapProp);
+      }
+      
+      function loadScript()
+      {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
+        document.body.appendChild(script);
+      }
+      
+      window.onload = loadScript;
+      </script>
+      -->
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -56,7 +81,7 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#attend">Attend</a>
+                        <a class="page-scroll" href="#attend">Agenda</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#participate">Participate</a>
@@ -79,7 +104,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">MobiTools</h1>
                         <br/>
-                        <h3>Co-located with ISCA 2016</h1>
+                        <h3>Co-located with <a href="http://isca2016.eecs.umich.edu/">ISCA 2016</a></h1>
                         <br/>
                         <br/>
                         <p class="intro-text">Tutorial on Infrastructure and Tools</p>
@@ -116,49 +141,59 @@
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
+    <!-- Participate Section -->
+    <section id="participate" class="content-section text-center">
         <div class="download-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Attend MobiTools 2016</h2>
-                    <p>You can sign up...blah...blah...</p>
+                <div class="col-lg-12">
+                    <h2>Participate in MobiTools 2016</h2>
+                    <p>We invite participation primarily in two forms:</p><br>
+                    <div class="col-md-5">
+                      <h4>Presentations</h4>
+                      <p>Making approximate computing successful requires cooperation among all layers of the stack, from algorithms to programming languages to OSes to architecture to circuits, as well as system components like storage and networks. This workshop aims to bring together an interdisciplinary group of researchers to present and discuss thoughts and ideas on how to effectively exploit approximate computing.
+</p>
+                      <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Sign Up for a Talk</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                      <h4>Attendance</h4>
+                      <p>Making approximate computing successful requires cooperation among all layers of the stack, from algorithms to programming languages to OSes to architecture to circuits, as well as system components like storage and networks. This workshop aims to bring together an interdisciplinary group of researchers to present and discuss thoughts and ideas on how to effectively exploit approximate computing.
+                      <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Enroll in the Mailing list</a>
+                    </div>
                     <br/>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Sign Up Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <!-- Organizers Section -->
+    <section id="organizers" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+            <div class="col-lg-12">
+                <h2>Organizers</h2><br>
+                <div class="col-md-4">
+                <p><a href="http://yuhaozhu.com/">Yuhao Zhu</a></p>
+                <p>Yuhao Zhu is a Ph.D. student at The University of Texas at Austin. He likes building better hardware and software to make next-generation client, cloud, and crowd computing faster, more energy efficient, and deliver better Quality of Experience.</p>
+                </div>
+                <div class="col-md-4">
+                <p><a href="http://matthewhalpern.com/">Matthew Halpern</a></p>
+                <p>Matthew Halpern is a Ph.D. student at The University of Texas at Austin. He is interested in leveraging crowdsourcing and big data techniques to build more intelligent and responsive mobile Web services at both the client and server side.</p>
+                </div>
+                <div class="col-md-4">
+                <p><a href="http://3nity.io/~vj/">Vijay Janapa Reddi</a></p>
+                <p>Vijay Janapa Reddi is an Assistant Professor at The University of Texas at Austin. He is interested in system architecture and software research to address performance, energy, and reliability issues for mobile and high-performance computing systems.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
+    <!-- Map Section
+    <div id="map"></div> -->
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
+            <img src="img/utece.png">
             <p>Copyright &copy; Trinity Research Group -- The University of Texas at Austin</p>
         </div>
     </footer>
@@ -171,9 +206,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
