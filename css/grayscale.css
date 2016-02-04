@@ -10,6 +10,8 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #000;
+    /*color: #080808;
+    background-color: #fff;*/
 }
 
 html {
@@ -352,7 +354,7 @@ footer p {
     margin: 0;
 }
 
-::-moz-selection {
+/*::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
     background: rgba(255,255,255,.2);
@@ -362,7 +364,7 @@ footer p {
     text-shadow: none;
     background: #fcfcfc;
     background: rgba(255,255,255,.2);
-}
+}*/
 
 img::selection {
     background: 0 0;
