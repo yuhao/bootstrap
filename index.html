@@ -158,8 +158,44 @@ including performance, power/energy, and user QoS experience.
                     </tr>
                     <tr>
                       <td>9:10 AM - 9:45 AM</td>
-                      <td>System and Toolchain Support for Intermittent Computing</td>
-                      <td><a href="http://brandonlucia.com/">Brandon Lucia</a></td>
+
+		      <td><a data-toggle="popover" data-placement="left" title="Abstract"
+                      data-content="Emerging energy-harvesting devices (EHDs) are computer systems
+                      that operate using energy extracted from their environment, even from low-power
+                      sources like ambient radio-frequency energy. Future EHDs will be a key enabler
+                      of emerging IoT applications, but today's EHDs operate intermittently, only as
+                      environmental energy is available.  Unfortunately, intermittence makes today's
+                      EHDs unreliable and extremely difficult to program.  In this talk I will
+                      summarize the main challenges of intermittent execution.  I will then discuss
+                      our recent efforts to develop future architecture, system, and toolchain
+                      support for EHDs to address the challenges of intermittence, focusing
+                      especially on programmability, debugging, and reliability.  I will close by
+                      discussing our recent work on building a reliable, EHD-based, hardware/software
+                      application platform.">System and Toolchain Support for Intermittent
+                      Computing</a></td>
+
+		      <td><a data-toggle="popover" data-placement="left"
+                      title="Bio" data-content="Brandon Lucia is an assistant professor in the
+                      department of electrical and computer engineering at Carnegie Mellon University
+                      in Pittsburgh, PA.  Brandon's research focuses on redefining computer
+                      architectures and systems that make increasingly pervasive, often
+                      safety-critical, devices reliable, energy-efficient, and programmable.  Brandon
+                      and his lab are currently focusing on defining the system stack for systems
+                      with intermittently available energy and resources, as well as on redefining
+                      parallel architectures to improve their efficiency, correctness, and
+                      reliability, exploiting heterogeneity and approximation.  Brandon's work
+                      targets the boundaries between computer architecture, compilers, system
+                      software, and programming languages.  Brandon's research group is supported by
+                      the National Science Foundation, Google, and Disney Research.  Brandon received
+                      a 2015 Google Faculty Research Award, the 2015 Bell Labs Prize, a 2015 OOPSLA
+                      Distinguished Paper Award, and a 2015 OOPSLA Distinguished Artifact Award.
+                      Before joining CMU, Brandon spent a year as a Researcher at Microsoft Research,
+                      Redmond.  Brandon earned a Ph.D. in Computer Science and Engineering from the
+                      University of Washington in 2013, and a B.S. degree in Computer Science from
+                      Tufts University.  Brandon's personal website is http://brandonlucia.com, his
+                      research group is at http://abstract.ece.cmu.edu, and his band netcat is at
+                      http://netcat.co">Brandon Lucia</a></td>
+
                     </tr>
                     <tr>
                       <td>9:45 AM - 10:30 AM</td>
@@ -305,6 +341,11 @@ the masterminds behind mobile computer architecture research.
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();   
+      });
+    </script>
 </body>
 
 </html>
